@@ -13,4 +13,5 @@
 
 #Build Simple Gallery
   PRODUCT_PACKAGES += \
-  GoogleClock
+  GoogleClock \
+  Simple-Gallery

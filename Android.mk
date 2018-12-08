@@ -82,6 +82,20 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
+#Gallery
+include $(CLEAR_VARS)
+LOCAL_MODULE := Simple-Gallery
+LOCAL_OVERRIDES_PACKAGES := Gallery2 Gallery3D GalleryNew3D
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_SDK_VERSION := current
+LOCAL_MIN_SDK_VERSION := 21
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
+LOCAL_SRC_FILES := apk/$(LOCAL_MODULE).apk
+include $(BUILD_PREBUILT)
 
-# ColtOS OTA
+
+# ColtOS Packages
 $(call inherit-product-if-exists, packages/apps/ColtApps/packages.mk)
