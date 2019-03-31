@@ -47,3 +47,9 @@
 # ******************************************************************
 # NEWER CLEAN STEPS MUST BE AT THE END OF THE LIST ABOVE THIS BANNER
 # ******************************************************************
+
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/Gcam)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/MarkupGoogle)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/ViaBrowser)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/WallpaperPickerGoogle)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/WellbeingPrebuilt)
