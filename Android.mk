@@ -98,5 +98,3 @@ LOCAL_SRC_FILES := apk/$(LOCAL_MODULE).apk
 include $(BUILD_PREBUILT)
 
 
-# ColtOS Packages
-$(call inherit-product-if-exists, packages/apps/ColtApps/packages.mk)
